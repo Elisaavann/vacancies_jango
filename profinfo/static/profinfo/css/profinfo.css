@@ -1,0 +1,170 @@
+body{
+    background: #FFFFFF;
+}
+
+
+.page__left img{
+    width: 250px;
+    float: left;
+}
+
+.page__left h3{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.page__left ul{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.page__left ul li{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    transition: transform .6s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__left ul li:hover, .page__left ul a:hover{
+    color: #4B0082;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+li{
+    margin-top: 5px;
+}
+
+.page__content {
+    color: #6f42c1;
+    margin-top: 60px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.page__content p{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.nav-link{
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.material-symbols-outlined{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.home_fst{
+    background-image: url("hero.png");
+    width: 200px;
+    height: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+h1{
+    color: #6f42c1;
+    text-align: center;
+}
+
+.skills_table{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.skill_name h1{
+    margin-top: 30px;
+}
+
+.demand_table{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 250px;
+  border: 2px solid #4B0082;
+  border-radius: 6px;
+}
+
+th{
+   border: 2px solid #4B0082;
+}
+
+.stat{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.text-dem{
+    margin-left: 270px;
+    color: #6f42c1;
+    padding-bottom: 0px;
+    margin-top: 40px;
+}
+
+.geog_table{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 250px;
+    border: 2px solid #4B0082;
+    border-radius: 6px;
+}
+
+.text-geo{
+    margin-left: 270px;
+    color: #6f42c1;
+    padding-bottom: 0px;
+    margin-top: 40px;
+}
+
+
+.page{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 246px calc(100% - 246px);
+    height: 100%;
+}
+
+.page__left{
+    height: 100%;
+    background: #6f42c1;
+}
+
+.page__right{
+    overflow: auto;
+    height: 100%;
+}
+
+.page__content{
+    padding: 20px 40px;
+}
+
+.page__left img{
+    margin-top: -40px;
+    margin-left: -30px;
+}
+
+.img_home{
+    width: 500px;
+    height: 100%;
+}
+
+.geog img{
+    height: 400px;
+    margin-top: -250px;
+    margin-left: 320px;
+    margin-bottom: 20px;
+}
+
+.geog{
+    margin-top: 60px;
+}

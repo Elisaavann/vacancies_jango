@@ -1,0 +1,98 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+<h1 class="skill_name">Востребованность</h1>
+{% endblock%}
+
+{% block content %}
+<h1 class="dem">Востребованность</h1>
+<p class="text-dem"></p>
+
+<div class="stat">
+    <table class="demand_table">
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Средняя зарплата, руб</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for i in saltotal %}
+        <tr>
+            <th>{{i.year}}</th>
+            <th>{{i.salary}}</th>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    <img src="{% static 'profinfo/img/SalaryLevelByYear.png' %}" alt="Уровень зарплат по годам">
+</div>
+
+<p class="text-dem"></p>
+
+<div class="stat">
+<table class="demand_table">
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Количество вакансий</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for i in vactotal %}
+        <tr>
+            <th>{{i.year}}</th>
+            <th>{{i.vacancy}}</th>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    <img src="{% static 'profinfo/img/VacancyCountByYear.png' %}" alt="Количество вакансий по годам">
+</div>
+
+<p class="text-dem"></p>
+
+<div class="stat">
+<table class="demand_table">
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Средняя зарплата Fullstack, руб</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for i in salforprof %}
+        <tr>
+            <th>{{i.year}}</th>
+            <th>{{i.salary}}</th>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    <img src="{% static 'profinfo/img/SalaryLevelByYearProf.png' %}" alt="Уровень зарплат Fullstack">
+</div>
+
+<p class="text-dem"></p>
+
+<div class="stat">
+<table class="demand_table">
+    <thead>
+        <tr>
+            <th>Год</th>
+            <th>Количество вакансий Fullstack</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for i in vacforprof %}
+        <tr>
+            <th>{{i.year}}</th>
+            <th>{{i.vacancy}}</th>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    <img src="{% static 'profinfo/img/VacancyCountByYearProf.png' %}" alt="Количество вакансий Fullstack">
+</div>
+{% endblock%}
+

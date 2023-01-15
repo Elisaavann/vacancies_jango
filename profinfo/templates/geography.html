@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    <h1 class="geog_name">География</h1>
+{% endblock%}
+
+{% block content %}
+<h1 class="geo">География</h1>
+<p class="text-geo"></p>
+
+<div class="geog">
+<table class="geog_table">
+    <thead>
+    <tr>
+        <th>Город</th>
+        <th>Средняя зарплата</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in vacforcity %}
+    <tr>
+        <th>{{i.city}}</th>
+        <th>{{i.salary}}</th>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    <img src="{% static 'profinfo/img/SalaryLevelByCity.png' %}" alt="Уровень зарплат по городам">
+</div>
+
+<p class="text-geo"></p>
+<div class="geog">
+<table class="geog_table">
+    <thead>
+    <tr>
+        <th>Город</th>
+        <th>Доля вакансий</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in vacforcityfrac %}
+    <tr>
+        <th>{{i.city}}</th>
+        <th>{{i.fraction}}</th>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+        <img src="{% static 'profinfo/img/VacancyFractionsByCity.png' %}" alt="Доля вакансий по городам">
+</div>
+{% endblock%}

@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    <h1>Навыки</h1>
+{% endblock%}
+
+{% block content %}
+<h1 class="skill_name">ТОП-10 навыков Fullstack-программиста</h1>
+<div class="skills_com">
+<table class="skills_table">
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Год</th>
+        <th>Количество повторений</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in skil %}
+    <tr>
+        <th>{{i.skill}}</th>
+        <th>{{i.year}}</th>
+        <th>{{i.count}}</th>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+    </div>
+{% endblock%}
