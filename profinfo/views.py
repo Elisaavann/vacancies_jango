@@ -92,7 +92,7 @@ def lastVac(request):
     
     template = loader.get_template('lastVac.html')
     context = {
-        'skills': res
+        'last_vacancy': res
     }
     return HttpResponse(template.render(context, request))
 

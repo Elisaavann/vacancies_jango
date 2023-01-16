@@ -1,5 +1,10 @@
+
 body{
-    background: #FFFFFF;
+    background: #cddbee;
+}
+
+ul {
+    list-style: none;
 }
 
 .page__left img{
@@ -15,13 +20,14 @@ body{
 .page__left ul{
     list-style: none;
     text-decoration: none;
-    color: #fff;
+    padding: 0 20px;
+    color: #cddbee;
     font-size: 17px;
 }
 
 .page__left ul li{
     text-decoration: none;
-    color: #fff;
+    color: #cddbee;
     display: block;
     margin-top: 10px;
     transition: transform .6s ease;
@@ -30,7 +36,7 @@ body{
 }
 
 .page__left ul li:hover, .page__left ul a:hover{
-    color: #4B0082;
+    color: #e6e8f7;
     text-decoration: none;
     transform: scale(1.05);
 }
@@ -39,7 +45,7 @@ li{
 }
 
 .page__content{
-    color: #6f42c1;
+    color: #0f0c33;
     margin-top: 60px;
     margin-left: 50px;
     text-align: center;
@@ -61,24 +67,19 @@ li{
     margin-right: 10px;
 }
 
-.home_fullstack{
+/* .home_fullstack{
     background-image: url("../../profinfo/img/home_profinfo.jpg");
-    width: 200px;
-    height: auto;
-}
+    width: 100px;
+    height: 200px;
+} */
 
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid #0f0c33;
 }
 
 h1{
-    color: #6f42c1;
+    color: #0f0c33;
     text-align: center;
-}
-
-.skills_table{
-  margin-left: 100px;
-  margin-top: 20px;
 }
 
 .skill_name h1{
@@ -86,40 +87,42 @@ h1{
 }
 
 .demand_table{
-  margin-left: 20px;
-  margin-top: 20px;
   width: 250px;
-  border: 2px solid #4B0082;
+  border: 2px solid #0f0c33;
   border-radius: 6px;
 }
 
+
 th{
-   border: 2px solid #4B0082;
+   border: 2px solid #0f0c33;
 }
 
 .stat{
     display: flex;
+    justify-content: center;
     margin-bottom: 70px;
+}
+
+.stat > img{
+    margin-left: 20px;
 }
 
 .text-dem{
     margin-left: 270px;
-    color: #6f42c1;
+    color: #0f0c33;
     padding-bottom: 0px;
     margin-top: 40px;
 }
 
 .geog_table{
-    margin-left: 20px;
-    margin-top: 20px;
     width: 250px;
-    border: 2px solid #4B0082;
+    border: 2px solid #0f0c33;
     border-radius: 6px;
 }
 
 .text-geo{
     margin-left: 270px;
-    color: #6f42c1;
+    color: #0f0c33;
     padding-bottom: 0px;
     margin-top: 40px;
 }
@@ -127,13 +130,27 @@ th{
 .page{
     overflow: hidden;
     display: grid;
-    grid-template-columns: 246px calc(100% - 246px);
+    grid-template-columns: auto 1fr;
     height: 100%;
 }
 
 .page__left{
     height: 100%;
-    background: #6f42c1;
+    background: #616b72;
+    overflow-y: auto;
+}
+
+.page_container{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    position: sticky;
+    height: 940px;
+    top: 0;
+    gap: 30px;
+}
+
+.logo {
+    padding-top: 30px;
 }
 
 .page__right{
@@ -145,47 +162,37 @@ th{
     padding: 20px 40px;
 }
 
-.page__left img{
-    margin-top: -40px;
-    margin-left: -30px;
-}
-
 .img_home{
     width: 500px;
     height: 100%;
     border-radius: 15px;
-    border:5px solid #6f42c1;
+    border:5px solid #0f0c33;
+}
+
+.man {
+    height: 500px;
 }
 
 .geog img{
-    height: 400px;
-    margin-top: -250px;
-    margin-left: 320px;
-    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .geog{
+    display: flex;
+    justify-content: center;
     margin-top: 60px;
 }
 
 .skills_com{
-    margin-left: -150px;
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
 }
-
-.years{
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    background: #9370DB;
-    width: 200vh;
-    padding-left: -30px;
-    color: white;
+.skills_com > img{
+    margin-left: 20px;
 }
 
-p{
-    margin-left: 50px;
+.footer_menu {
+    color: #cddbee;
+    padding: 0 10px;
 }
-
-/* .block_1{
-}
-Footer
-© 2023 GitHub, Inc. */
