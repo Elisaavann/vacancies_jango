@@ -5,6 +5,15 @@
 {% endblock%}
 
 {% block content %}
-    <h1>Последние вакансии</h1>
-    <p></p>
+<h1 class="skill_name">Последние вакансии</h1>
+    {% for i in skills %}
+        <p>
+        {{i.name}}
+        {{i.description}}
+        {{i.key_skills}}
+        {{i.employer.name}}
+        {{i.salary}}
+        {{i.area.name}}
+        {{i.published_at}}
+    {% endfor %}
 {% endblock%}

@@ -2,7 +2,6 @@ body{
     background: #FFFFFF;
 }
 
-
 .page__left img{
     width: 250px;
     float: left;
@@ -39,7 +38,7 @@ li{
     margin-top: 5px;
 }
 
-.page__content {
+.page__content{
     color: #6f42c1;
     margin-top: 60px;
     margin-left: 50px;
@@ -62,8 +61,8 @@ li{
     margin-right: 10px;
 }
 
-.home_fst{
-    background-image: url("hero.png");
+.home_fullstack{
+    background-image: url("../../profinfo/img/home_profinfo.jpg");
     width: 200px;
     height: auto;
 }
@@ -71,7 +70,6 @@ li{
 table, th, td {
   border: 1px solid black;
 }
-
 
 h1{
     color: #6f42c1;
@@ -126,7 +124,6 @@ th{
     margin-top: 40px;
 }
 
-
 .page{
     overflow: hidden;
     display: grid;
@@ -156,6 +153,8 @@ th{
 .img_home{
     width: 500px;
     height: 100%;
+    border-radius: 15px;
+    border:5px solid #6f42c1;
 }
 
 .geog img{
@@ -168,3 +167,25 @@ th{
 .geog{
     margin-top: 60px;
 }
+
+.skills_com{
+    margin-left: -150px;
+    margin-top: 30px;
+}
+
+.years{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background: #9370DB;
+    width: 200vh;
+    padding-left: -30px;
+    color: white;
+}
+
+p{
+    margin-left: 50px;
+}
+
+/* .block_1{
+}
+Footer
+© 2023 GitHub, Inc. */
