@@ -17,3 +17,4 @@
 Содержит рейтинг топ-10 навков по интернет-опросу. А также топ-10 за каждый год начиная с 2015 из csv-файла.
 ![image](https://user-images.githubusercontent.com/113943522/212772423-0f0b61e4-9d0d-4939-8b38-be8c2531ad87.png)
 
+Проект выложен на хостинг: http://elisaavann.pythonanywhere.com/
