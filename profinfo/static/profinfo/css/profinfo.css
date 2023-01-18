@@ -40,6 +40,7 @@ ul {
     text-decoration: none;
     transform: scale(1.05);
 }
+
 li{
     margin-top: 5px;
 }
@@ -67,14 +68,8 @@ li{
     margin-right: 10px;
 }
 
-/* .home_fullstack{
-    background-image: url("../../profinfo/img/home_profinfo.jpg");
-    width: 100px;
-    height: 200px;
-} */
-
 table, th, td {
-  border: 1px solid #0f0c33;
+  border: 2px solid #0f0c33;
 }
 
 h1{
@@ -90,11 +85,6 @@ h1{
   width: 250px;
   border: 2px solid #0f0c33;
   border-radius: 6px;
-}
-
-
-th{
-   border: 2px solid #0f0c33;
 }
 
 .stat{
@@ -188,8 +178,15 @@ th{
     justify-content: center;
     margin-top: 30px;
 }
+
 .skills_com > img{
     margin-left: 20px;
+}
+
+.lastVac_table{
+    width: 100%;
+    border: 2px solid #0f0c33;
+    border-radius: 6px;
 }
 
 .footer_menu {

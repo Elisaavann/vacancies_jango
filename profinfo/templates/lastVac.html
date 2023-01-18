@@ -1,19 +1,29 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    <h1 class="skill_name">Последние вакансии</h1>
+    <h1 class="lastVac_name">Последние вакансии Fullstack-программиста</h1>
 {% endblock%}
 
 {% block content %}
-<h1 class="skill_name">Последние вакансии</h1>
-    {% for i in last_vacancy %}
-        <p>
-        {{i.name}}
-        {{i.description}}
-        {{i.key_skills}}
-        {{i.employer.name}}
-        {{i.salary}}
-        {{i.area.name}}
-        {{i.published_at}}
-    {% endfor %}
+<h1 class="lastVac_name">Последние вакансии Fullstack-программиста</h1>
+<h3 class="lastVac_name">(приводятся только открытые вакансии)</h3>
+<p><br></p>
+<table class="lastVac_table">
+    <thead>
+        <tr>
+            {% for h in lastVacHeader %}
+                <th>{{h}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for v in lastTopVacancy %}
+            <tr>
+                {% for c in v %}
+                    <th>{{ c }}</th>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock%}
